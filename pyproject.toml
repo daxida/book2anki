@@ -8,7 +8,8 @@ version = "1.0.0"
 readme = "README.md"
 dependencies = [
     "genanki",
-    "mecab-python3"
+    "mecab-python3",
+    "unidic-lite",
 ]
 
 [project.optional-dependencies]
