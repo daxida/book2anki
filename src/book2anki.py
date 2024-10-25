@@ -213,7 +213,7 @@ def book2anki(
     lower_freq_bound: int,
     min_number_sentences: int,
 ) -> None:
-    dict_json_path = Path("src") / "fdict" / "JPDB_v2.2_Frequency_Kana_2024-10-13.json"
+    dict_json_path = Path(__file__).parent / "JPDB_v2.2_Frequency_Kana_2024-10-13.json"
     frequency_dict = load_frequency_dictionary(dict_json_path)
 
     text = read_text_or_folder(ipath)
