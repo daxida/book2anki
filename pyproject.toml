@@ -18,6 +18,9 @@ lint = ["ruff"]
 [project.scripts]
 book2anki = "book2anki:main"
 
+[tool.setuptools]
+include-package-data = true
+
 [tool.ruff]
 line-length = 100
 output-format = "concise"
