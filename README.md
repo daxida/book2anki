@@ -6,6 +6,13 @@ At the moment it only supports Japanese.
 
 It utilizes the [MeCab](https://github.com/SamuraiT/mecab-python3) library for word segmentation and integrates frequency data from JPDB through [yomitan-dictionaries](https://github.com/Kuuuube/yomitan-dictionaries).
 
+## How to run
+
+```
+pip install git+https://github.com/daxida/book2anki
+book2anki -i "path_to_your_file_or_folder"
+```
+
 ## Requires
 
 It comes already with the `JPDB v2.2 Kana Display Only` dictionary from [yomitan-dictionaries](https://github.com/Kuuuube/yomitan-dictionaries). Changing it is a matter of renaming a couple paths in the code.
