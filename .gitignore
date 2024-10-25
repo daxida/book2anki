@@ -3,6 +3,6 @@ venv
 build
 *.egg-info
 
-media/*.json
+*.json
 dict.apkg
 GTO

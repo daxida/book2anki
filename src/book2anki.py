@@ -10,9 +10,8 @@ import MeCab
 FreqDict = dict[str, dict[str, int]]
 
 
-def load_frequency_dictionary(media_path: Path) -> FreqDict:
+def load_frequency_dictionary(dict_json_path: Path) -> FreqDict:
     """Load a custom frequency dictionary."""
-    dict_json_path = media_path / "JPDB_v2.2_Frequency_Kana_2024-10-13.json"
     if not dict_json_path.exists():
         dict_path_zip = dict_json_path.with_suffix(".zip")
         if not dict_path_zip.exists():
@@ -214,8 +213,8 @@ def book2anki(
     lower_freq_bound: int,
     min_number_sentences: int,
 ) -> None:
-    media_path = Path("media")
-    frequency_dict = load_frequency_dictionary(media_path)
+    dict_json_path = Path("src") / "fdict" / "JPDB_v2.2_Frequency_Kana_2024-10-13.json"
+    frequency_dict = load_frequency_dictionary(dict_json_path)
 
     text = read_text_or_folder(ipath)
 
