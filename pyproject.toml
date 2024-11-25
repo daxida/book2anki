@@ -6,6 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "book2anki"
 version = "1.0.0"
 readme = "README.md"
+requires-python = ">=3.12"
 dependencies = [
     "genanki",
     "mecab-python3",
